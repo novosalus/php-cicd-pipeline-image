@@ -8,4 +8,3 @@ docker-php-ext-install mysqli curl zip mbstring dom xml json && \
 cp $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini && \
 sed -i -e 's/^short_open_tag\s*=.*/short_open_tag = Off/' $PHP_INI_DIR/php.ini && \
 apt-get -y clean && rm -rf /var/lib/apt/lists/*
-
